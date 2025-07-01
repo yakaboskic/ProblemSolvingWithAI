@@ -193,5 +193,6 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-# Don't commit my notes
+# Don't commit my notes or solutions
 my-notes/
+solutions/
