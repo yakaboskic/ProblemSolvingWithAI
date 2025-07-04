@@ -32,11 +32,12 @@ class State:
         yield from ()
 
 
-# ---------- Breadth-First Search ----------
+# ---------- Search ----------
 
-def bfs(start: State):
+def search(start: State):
     """Return a list of states from start to goal, or None if unsolvable."""
-    # TODO: standard BFS skeleton (scribes share your implementations with your classmates!)
+    # TODO: standard search skeleton (scribes share your implementations with your classmates!)
+    # Which search algorithm would be best to for this problem?
     frontier = deque()
     visited = set()
     parent = {}
@@ -50,7 +51,7 @@ def bfs(start: State):
 
 if __name__ == "__main__":
     start_state = State(left_foxes=3, left_chickens=3, boat_left=True)
-    path = bfs(start_state)
+    path = search(start_state)
     if path:
         print(f"Solved in {len(path)-1} moves:")
         for step, s in enumerate(path):
