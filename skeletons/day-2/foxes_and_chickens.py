@@ -36,7 +36,7 @@ class State:
 
 def bfs(start: State):
     """Return a list of states from start to goal, or None if unsolvable."""
-    # TODO: standard BFS skeleton
+    # TODO: standard BFS skeleton (scribes share your implementations with your classmates!)
     frontier = deque()
     visited = set()
     parent = {}
@@ -46,7 +46,7 @@ def bfs(start: State):
     return None  # TODO: replace
 
 
-# ---------- Simple CLI demo ----------
+# ---------- CLI Runner ----------
 
 if __name__ == "__main__":
     start_state = State(left_foxes=3, left_chickens=3, boat_left=True)
